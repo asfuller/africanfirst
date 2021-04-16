@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text&family=Volkhov&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&family=Titillium+Web&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <title>Afrikan First</title>
+</head>
+<body>
+    <!------Navbar-------->
+    <div class="navbar">
+    <nav>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+
+        <ul>
+            <li><a class="active" href="/index.html">Home</a></li>
+            <li><a href="#">Shop</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="faq.html">FAQ</a></li>
+            <li><a href="contact-us.html">Contact Us</a></li>
+        </ul>
+        <!--<div class="fa-icons">
+            <i class="fas fa-shopping-cart"></i>
+            <i class="fas fa-search"></i>
+        </div>-->
+    </nav>
+
+    <div class="logo"></div>
+        <label class="logo"><a href="index.html">Afrikan First</a></label>
+
+    <div class="h-section2">
+        <i class="fas fa-shopping-basket"></i>
+        <i class="fas fa-search"></i>
+    </div>
+
+   <!--- <div class="h-section3">
+        <p>Follow us on:</p>
+        <i class="fab fa-instagram"></i>
+    </div>--->
+
+    </div>
+
+    <header>
+        <div class="header">
+            <div class="content">
+                <h1>Afrikan First</h1>
+                <h3>Discover what it means</h3>
+                <button class="button" id="button1">View all collection</button>
+            </div>
+        </div>
+    </header>
+
+    <!---vertical divider---
+    <div class="vertical"></div>
+
+    <div class="vTitle">
+        <h4>01 about</h4>
+    </div>-->
+
+
+    <!----About Section----->
+
+    <div class="about">
+        <h3>"Every black person should please remember that you
+            were Afrikans before you became anything else."</h3>
+    </div>
+
+    <!---vertical divider----
+    <div class="vertical"></div>
+
+    <div class="vTitle">
+        <h4>02 portfolio</h4>
+    </div>-->
+
+    <!----Portfolio---------->
+
+    <!------Footer-------->
+    <footer>
+        <p>© 2020 by Afrikan First. </p>
+        <!--<p>Created by WebEmpress - by Alexandria Fuller</p>-->
+    </footer>
+
+    <script>
+
+        //button1 = go to shop page
+        document.getElementById("button1").onclick = function (){
+            location.href = "shop.html";
+        };
+
+        //Array of images which you want to show: Use path you want.
+        var images=new Array('/imgs/p1.jpg','imgs/p2.jpg');
+        var nextimage=0;
+        doSlideshow();
+
+        function doSlideshow(){
+            if(nextimage>=images.length){nextimage=0;}
+            $('header')
+            .css('background-image','url("'+images[nextimage++]+'")')
+            .fadeIn(500,function(){
+                setTimeout(doSlideshow,1000);
+            });
+        }
+        </script>
+</body>
+</html>

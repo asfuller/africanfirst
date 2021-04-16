@@ -1,0 +1,149 @@
+header{
+    display: flex;
+    justify-content: center;
+    margin: 35px;
+    height: 70vh;
+
+
+    /*border-style: dashed;*/
+
+}
+
+.header{
+    width: 100%;
+    animation: animate 14s ease-in-out infinite;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+@keyframes animate{
+    0%,100%{
+        background-image: url('/imgs/african-gang.jpg');
+    }
+
+    25%{
+        background-image: url('/imgs/girl1.jpg');
+    }
+
+    50%{
+        background-image: url('/imgs/girl2.jpg');
+    }
+}
+
+.content{
+    text-align: center;
+    align-self: center;
+    margin: 250px;
+    color: #ffffff;
+    font-family: 'Crimson Text', serif;
+    letter-spacing: 7px;
+
+    /*border-style: dotted;*/
+}
+
+.content h1{
+    font-size: 60px;
+    word-spacing: 20px;
+    /*text-shadow: 2px 2px rgba(0, 0, 0, 0.5);*/
+}
+
+.content h3{
+    text-shadow: 2px 2px rgba(0, 0, 0, 0.5);
+}
+
+.button{
+    background-color: #ffffff;
+    border: none;
+    color: #000000;
+    padding: 15px 42px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    margin-top: 50px;
+    cursor: pointer;
+    font-family: 'Crimson Text', serif;
+    transition: .3s ease-out;
+}
+
+.button:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #ffffff;
+    transition: .3s ease-in;
+}
+
+.vertical{
+    border-left: 2px solid #00000021;
+    width: 1px;
+    height: 100px;
+    position: relative;
+    left: 50%;
+    margin-left: -3px;
+    margin-top: -35px;
+}
+
+.vTitle{
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    color: #00000033;
+    word-spacing: 3px;
+}
+
+.about{
+    position: relative;
+    display: block;
+    text-align: center;
+    overflow: hidden;
+    width: 600px;
+    margin: 0 auto 0;
+    margin-top: 200px;
+    margin-bottom: 200px;
+}
+
+.about h3{
+    font-size: 30px;
+}
+
+.portfolio{
+    display: grid;
+    grid-template-columns: 500px 500px;
+    width: 1120px;
+    height: 60vh;
+    margin: 0 auto 0;
+    position: relative;
+    overflow: hidden;
+    margin-top: 100px;
+}
+
+.p1,.p2{
+    width: 100%;
+    height: 800px;
+    justify-self: center;
+}
+
+.p1 img,.p2 img{
+    height: 60%;
+}
+
+.p1 h3, .p2 h3{
+    color: #000000;
+    font-size: 20px;
+    text-align: center;
+}
+
+.p1{
+    background-image: url("/imgs/p1.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+
+.p2{
+    background-image: url("/imgs/p2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
